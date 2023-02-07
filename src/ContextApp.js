@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import { useState, createContext, useContext } from 'react';
 
 // Create the context
 const CounterContext = createContext();
@@ -36,7 +36,7 @@ export default ContextApp;
 
 // Counter component
 const Counter = () => {
-  const { count, increment, decrement } = React.useContext(CounterContext);
+  const { count, increment, decrement } = useContext(CounterContext);
 
   return (
     <div>
@@ -48,7 +48,7 @@ const Counter = () => {
 };
 
 const Component1 = () => {
-  const { component1 } = React.useContext(CounterContext);
+  const { component1 } = useContext(CounterContext);
 
   console.log("component1", component1);
 
@@ -59,7 +59,7 @@ const Component1 = () => {
 };
 
 const Component2 = () => {
-  const { component2 } = React.useContext(CounterContext);
+  const { component2 } = useContext(CounterContext);
 
   console.log("component2", component2);
 
@@ -70,7 +70,7 @@ const Component2 = () => {
 };
 
 const Component3 = () => {
-  const { component3 } = React.useContext(CounterContext);
+  const { component3 } = useContext(CounterContext);
 
   console.log("component3", component3);
 

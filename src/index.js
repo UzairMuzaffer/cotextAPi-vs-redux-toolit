@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import ContextApp from "./ContextApp";
-import ToolkitApp, { store } from "./ToolkitApp";
+import ReduxToolkitApp, { store } from "./ReduxToolkitApp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,9 +19,9 @@ root.render(
       <br />
 
 
-      <div>ToolkitApp:
+      <div>ReduxToolkitApp:
         <Provider store={store}>
-          <ToolkitApp />
+          <ReduxToolkitApp />
         </Provider>
       </div>
     </div>

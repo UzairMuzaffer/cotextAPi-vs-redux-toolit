@@ -33,7 +33,7 @@ export const store = configureStore({
 
 
 // App component
-const ToolkitApp = () => (
+const ReduxToolkitApp = () => (
     <div>
         <Counter />
         <Component1 />
@@ -42,7 +42,7 @@ const ToolkitApp = () => (
     </div>
 );
 
-export default ToolkitApp;
+export default ReduxToolkitApp;
 
 // Counter component
 const Counter = () => {
